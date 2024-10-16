@@ -1,39 +1,59 @@
 # Online_Quiz_System
 
-This is a console-based project designed to manage and conduct online quizzes. The project involves user management, quiz creation, and result analysis. It is built using Java, Hibernate for ORM (Object-Relational Mapping), and MySQL as the database.
+The **Online Quiz System** is a comprehensive application designed to manage and conduct quizzes for both admin and regular users. Developed using **Java** for backend functionality and **MySQL** for the database, this system offers robust user management, quiz operations, and a user-friendly interface.
+
+The application is divided into two main user roles:
+
+**1. Admin:** The admin has full control over managing users, quiz questions, and categories.
+
+
+**2. Regular User:** Regular users can log in, view their details, and participate in quizzes.
 
 
 
-**Abstract**
-
-The Online Quiz System allows users to participate in quizzes, while administrators (admin) can create and manage quizzes. The system tracks results and displays them on leaderboards. It uses Java Hibernate for seamless interaction between Java objects and the database, ensuring persistent storage of users, quizzes, results, and leaderboard entries.
-
-**Main Entities**
-
-**1. User**: Represents a participant or an administrator who can log in, take quizzes, and view results.
-
-**2. Quiz**: Represents the quiz details such as questions, created by a user (admin).
-
-**3. Result**: Represents the results of the users after completing a quiz.
-
-**4. Leaderboard**: Displays the users and their scores based on their quiz performances.
+**Key Features and Operations:**
 
 
+**1. User Management:**
+
+   **i. User Login:** The system checks if the username exists in the database. If the username exists, it verifies the password. If the username is new, it stores the user’s credentials in the database and logs them in.
+
+   
+   **ii. User Registration:** New users can register by providing a unique username and password. If the username already exists, the system prompts the user to choose a different name.
+
+   
+**2. Admin Operations:**
+
+   **i. User Details:** The admin can view all registered user details.
+
+
+   **ii. Question Management** (future enhancement): Admins can manage quiz questions and their associated details.
+
+
+   **iii. Category Management:** Admins can manage different quiz categories.
+
+
+   **iv. Play Quiz:** Admins can participate in quizzes to test the system's performance.
+
+   
+**3. Regular User Operations:**
+
+   **i. User Details:** Users can view their personal information.
+
+   
+   **ii. Play Quiz:** Users can participate in available quizzes.
 
 
 
+**4. Database Integration:**
 
-**Key Features**
+   **i.** User credentials are stored in a **MySQL** database.
 
-**1. User Management:** Create, read, update, and delete users.
+   
+   **ii.** The database checks for unique usernames to prevent duplicate entries and ensures secure login.
 
-**2. Quiz Management:** Admin can create and delete quizzes.
-
-**3. Result Analysis:** Store and display quiz results for users.
-
-**4. Leaderboard:** Track and show the highest scores and top-performing users.
-
-
+   
+The project is designed to provide a seamless quiz experience with clear separation between admin and user operations, as well as efficient user authentication.
 
 
 
